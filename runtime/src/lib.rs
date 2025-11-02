@@ -267,6 +267,14 @@ mod runtime {
 	)]
 	pub struct Runtime;
 
+
+	#[runtime::pallet_index(51)]
+pub type Utility = pallet_utility;
+
+#[runtime::pallet_index(52)]
+pub type CustomPallet = custom_pallet;
+}
+
 	#[runtime::pallet_index(0)]
 	pub type System = frame_system;
 	#[runtime::pallet_index(1)]
